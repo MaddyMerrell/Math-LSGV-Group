@@ -1,6 +1,6 @@
 # Math-LSGV-Group
 Team Members:
-Chole
+Chloe
 Maddy 
 Daniel 
 Rayna
