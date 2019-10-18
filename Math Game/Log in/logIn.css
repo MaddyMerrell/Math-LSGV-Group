@@ -1,0 +1,96 @@
+body {
+    padding-left: 10px;
+}
+
+#header {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 60px;
+}
+
+#username {
+    font-size: 40px;
+}
+
+#password {
+    font-size: 40px;
+}
+
+#usernameBox {
+    width: 500px;
+    height: 50px;
+    border-color: grey;
+    border-radius: 10px;
+    font-size: 20px;
+    border-width: 4px;
+}
+
+#passwordBox {
+    width: 510px;
+    height: 50px;
+    border-color: grey;
+    border-radius: 10px;
+    font-size: 20px;
+    border-width: 4px;
+}
+
+.logInButton {
+    width: 200px;
+    background-color: grey;
+    font-size: 40px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-width: 4px;
+    color: white;
+    float: center;
+}
+
+.logInButton:hover {
+    width: 200px;
+    background-color: white;
+    font-size: 40px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-width: 4px;
+    color: grey;
+    float: center;
+}
+
+.createAccountButton {
+    width: 415px;
+    background-color: grey;
+    font-size: 40px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-width: 4px;
+    color: white;
+    float: center;
+}
+
+.createAccountButton:hover {
+    width: 415px;
+    background-color: white;
+    font-size: 40px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: grey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-width: 4px;
+    color: grey;
+    float: center;
+}
