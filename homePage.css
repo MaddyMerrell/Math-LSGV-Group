@@ -1,70 +1,43 @@
-#header {
-    font-family: sans-serif;
-    font-weight: bold;
-    color: black;
-    font-size: 60px;
-}
-
-#instructions {
-    font-size: 40px;
-}
-
 .additionButton {
-    width: 500px;
-    background-color: #d40404;
-    font-size: 75px;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: #d40404;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-    border-width: 4px;
-    color: white;
-    float: center;
-}
-
-.additionButton:hover {
-    width: 500px;
-    background-color: white;
-    font-size: 75px;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: #d40404;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-    border-width: 4px;
-    color: #d40404;
-    float: center;
+    width: 12%;
+    height: 21%;
+    border-radius: 60px;
+    background: none;
+    border: none;
+    
+    position: absolute;
+    top: 8%;
+    left: 67.8%;
+    
 }
 
 .subtractionButton {
-    width: 500px;
-    background-color: #e66407;
-    font-size: 75px;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: #e66407;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-    border-width: 4px;
-    color: white;
-    float: center;
+    width: 13%;
+    height: 23%;
+    border-radius: 65px;
+    background: none;
+    border: none;
+    
+    position: absolute;
+    top: 27.2%;
+    left: 84.8%;
+    
 }
 
-.subtractionButton:hover {
-    width: 500px;
-    background-color: white;
-    font-size: 75px;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: #e66407;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-    border-width: 4px;
-    color: #e66407;
-    float: center;
+.addSubButton {
+    width: 14.6%;
+    height: 25.5%;
+    border-radius: 70px;
+    background: none;
+    border: none;
+    
+    position: absolute;
+    top: 37.5%;
+    left: 64%;
+    
+}
+
+body {
+    background: url("HomePage.PNG") no-repeat top left fixed;
+    background-size: 100% 100%;
 }
