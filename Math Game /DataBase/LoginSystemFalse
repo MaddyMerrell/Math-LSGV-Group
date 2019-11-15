@@ -1,0 +1,9 @@
+<html>
+<body>
+<p>Unsuccessful Login</p>
+<p>redirecting...</p>
+<!-- <a href="../index.html">Click here to return to Login</a> -->
+<meta http-equiv="refresh" content="2; URL='http://localhost/~daniel/Math%20Game%20/'"/>
+
+</body>
+</html>
