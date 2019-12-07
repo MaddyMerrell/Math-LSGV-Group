@@ -40,22 +40,21 @@
             <span id="go"></span>
     
             <script>
-                var correct;
+                var checked;
                 function check() {
+                    checked = true;
                     var answer, msg;
                     answer = document.getElementById('answer');
                     if (answer.value == result) {
-                        correct = true;
                         msg = "CORRECT!";
                     } else {
-                        correct = false;
-                        msg = "TRY AGAIN."
+                        msg = "INCORRECT, " + one + " - " + two + " = " + result;
                     }
                     document.getElementById("msg").innerHTML = msg;
                 }
         
                 function go(){
-                    if(correct == true) {
+                    if(checked == true) {
                         var choose = Math.floor((Math.random() * 2));
                         if (choose == 0) window.location.href="aProblem8.html";
                         if (choose == 1) window.location.href="sProblem8.html";
