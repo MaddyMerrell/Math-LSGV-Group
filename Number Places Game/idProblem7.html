@@ -52,6 +52,9 @@
                     answer = document.getElementById('answer');
                     if (num == result) {
                         msg = "CORRECT!";
+                        newScore = JSON.parse(window.localStorage.getItem('score'))
+                        newScore+= 1; //adds 1 to overall score stored in variable score
+                        window.localStorage.setItem('score', newScore); //stores increased value back into localStorage
                     } else {
                         if(num == 0) msg = "INCORRECT, it is " + one;
                         if(num == 1) msg = "INCORRECT, it is " + two;

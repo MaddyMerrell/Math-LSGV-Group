@@ -52,10 +52,12 @@
                     answer = document.getElementById('answer');
                     if (num == result) {
                         msg = "CORRECT!";
+                        window.localStorage.setItem('score', '1');  //stores score variable for correct
                     } else {
                         if(num == 0) msg = "INCORRECT, it is " + one;
                         if(num == 1) msg = "INCORRECT, it is " + two;
                         if(num == 2) msg = "INCORRECT, it is " + three;
+                        window.localStorage.setItem('score', '0');  //stores score variable for incorrect
                     }
                     document.getElementById("msg").innerHTML = msg;
                 }
