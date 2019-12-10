@@ -11,6 +11,17 @@
     
 }
 
+#score {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    
+    font-family: 'Kalam';    
+    font-size: 15vmin;
+    color: black;
+    text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+}
+
 body {
     background: url("AdditionGameEnd.PNG") no-repeat top left fixed;
     background-size: 100% 100%;

@@ -41,8 +41,10 @@
                     answer = document.getElementById('answer');
                     if (answer.value == result) {
                         msg = "CORRECT!";
+                        window.localStorage.setItem('score', '1');  //stores score variable for correct
                     } else {
                         msg = "INCORRECT, " + one + " + " + two + " = " + result;
+                        window.localStorage.setItem('score', '0');  //stores score variable for incorrect
                     }
                     document.getElementById("msg").innerHTML = msg;
                 }

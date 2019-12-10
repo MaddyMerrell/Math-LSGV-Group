@@ -12,6 +12,13 @@
     
 <body id="body">
         <a href="/Home%20Page/homePage.html"><button type="button" id="continue" class="continue"></button>
+        
+        <span id="score"></span>
+        <script>        
+            var finalScore = window.localStorage.getItem('score');
+            document.getElementById("score").innerHTML = finalScore;        
+        </script> 
+            
 </body>
     
 </html>
