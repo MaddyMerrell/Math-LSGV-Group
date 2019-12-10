@@ -41,6 +41,9 @@
                     answer = document.getElementById('answer');
                     if (answer.value == result) {
                         msg = "CORRECT!";
+                        newScore = JSON.parse(window.localStorage.getItem('score'))
+                        newScore+= 1; //adds 1 to overall score stored in variable score
+                        window.localStorage.setItem('score', newScore); //stores increased value back into localStorage
                     } else {
                         msg = "INCORRECT, " + one + " + " + two + " = " + result;
                     }
@@ -48,7 +51,25 @@
                 }
         
                 function go(){
-                    if(checked == true) window.location.href="addSubGameEnd.html";
+                    if(checked == true) {
+                        $(document).ready(function () {
+                        createCookie("Score", window.localStorage.getItem('score'), "10");
+                        createCookie("GM", "Mixed", "10");
+                      });
+                  
+                    function createCookie(name, value, days) {
+                        var expires;
+                        if (days) {
+                            var date = new Date();
+                            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                            expires = "; expires=" + date.toGMTString();
+                        } else {
+                            expires = "";
+                        }
+                    document.cookie = escape(name) + "=" + escape(value) + expires + "; path=/";
+                    }
+                      window.location.href="../DataBase/running_total_test.php";
+                    }                
                 }
             </script>
             
