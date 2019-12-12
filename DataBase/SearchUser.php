@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "Bigmac598";
-$dbname = "myDB";
+$servername = "remotemysql.com";
+$username = "ZwypqC96MH";
+$password = "Opmx6dzdDM";
+$dbname = "ZwypqC96MH";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -14,6 +14,7 @@ if ($conn->connect_error) {
 $uname = $_POST['username'];
 $pass  = $_POST['psw'];
 $sql = "SELECT * FROM Students WHERE username='$uname'";
+$nullVar = NULL;
 
 $qry   = mysqli_query($conn,$sql);
 if(!$qry) {
@@ -23,7 +24,12 @@ if(!$qry) {
     $row=mysqli_fetch_array($qry);
 
     if ($uname==$row['username']) {
-         if($uname==$row['username'] && $pass==$row['password']) {
+        if($uname==$nullVar || $pass==$nullVar) {
+          header("Location: loginSystemFalse");
+      }
+        else if($uname==$row['username'] && $pass==$row['password']) {
+          session_start();    //start a session
+          $_SESSION['users_name'] = $uname;
            header('Location: loginSystemTrue');
         }
         else {
@@ -33,24 +39,5 @@ if(!$qry) {
     }
 }
 
-// $user = $_POST['username'];
-// $psw = $_POST['psw'];
-//
-// $query = "SELECT * FROM Students WHERE username = $user AND password = $psw";
-// $result = mysqli_query($conn,$query);
-//
-// if ($result = true) {
-//   echo $result;
-// } else {
-//   echo "Goodbye World";
-// }
 
-$txt = $_POST[username];
-$txt2 = $_POST[psw];
-
-// "SELECT * from Students WHERE username = '$_GET[username]'";
-// $result = $conn->query($sql);
-//
-// "SELECT password FROM Students"
-// print "hello";
 ?>

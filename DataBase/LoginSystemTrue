@@ -1,6 +1,8 @@
-<html>
 <body>
 <p>Successful Login</p>
-<a href="../homePage.html">Click here to Continue to Game</a>
+<p>redirecting...</p>
+<!-- <a href="../index.html">Click here to return to Login</a> -->
+<meta http-equiv="refresh" content="0; URL='../Home Page/homePage.html'"/>
+
 </body>
 </html>
