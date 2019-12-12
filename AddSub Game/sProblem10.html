@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="sProblem10.css">
     <link rel = "stylesheet" type = "text/js" href = "additionGame.js" >
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Kalam:700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Kalam:700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
 <body class="body">
-    
+
         <div class="content">
-            
+
             <button type="button" id="op1"></button>
             <button type="button" id="op2"></button>
             <script>
@@ -28,17 +28,17 @@
                     two = temp;
                 }
                 result = one - two;
-                document.getElementById("op1").innerHTML = one;        
+                document.getElementById("op1").innerHTML = one;
                 document.getElementById("op2").innerHTML = two;
             </script>
-    
+
             <input type="text" class="textBox" name="answer" id="answer"/>
             <button type="button" id="checkButton" class="checkButton" onclick="check()"></button>
             <button type="button" id="nextButton" class="nextButton" onclick="go()"></button>
-    
+
             <span id="msg"></span>
             <span id="go"></span>
-    
+
             <script>
                 var checked;
                 function check() {
@@ -55,14 +55,14 @@
                     }
                     document.getElementById("msg").innerHTML = msg;
                 }
-        
+
                 function go(){
                     if(checked == true) {
                         $(document).ready(function () {
                         createCookie("Score", window.localStorage.getItem('score'), "10");
                         createCookie("GM", "Mixed", "10");
                       });
-                  
+
                     function createCookie(name, value, days) {
                         var expires;
                         if (days) {
@@ -74,12 +74,12 @@
                         }
                     document.cookie = escape(name) + "=" + escape(value) + expires + "; path=/";
                     }
-                      window.location.href="../DataBase/running_total_test.php";
-                    }                
+                      window.location.href="../DataBase/add_score_mixed.php";
+                    }
                 }
             </script>
-            
+
         </div>
 </body>
-       
+
 </html>
