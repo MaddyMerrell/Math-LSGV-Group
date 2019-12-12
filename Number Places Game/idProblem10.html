@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="idProblem10.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Kalam:700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Kalam:700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
 <body class="body">
-    
+
         <div class="content">
-            
+
             <span id="question"></span>
             <button type="button" id="op1" onclick="result=0"></button>
             <button type="button" id="op2" onclick="result=1"></button>
@@ -25,25 +25,25 @@
                 one = Math.floor((Math.random() * 9) + 1);    
                 two = Math.floor((Math.random() * 10));
                 three = Math.floor((Math.random() * 10));
-                
+
                 if(num == 0) place = "HUNDREDS";
                 if(num == 1) place = "TENS";
                 if(num == 2) place = "ONES";
-                
+
                 question = "What is in the " + place + " place of " + one + two + three + "?";
-                
+
                 document.getElementById("question").innerHTML = question;
-                document.getElementById("op1").innerHTML = one;        
+                document.getElementById("op1").innerHTML = one;
                 document.getElementById("op2").innerHTML = two;
                 document.getElementById("op3").innerHTML = three;
             </script>
-    
+
             <button type="button" id="checkButton" class="checkButton" onclick="check()"></button>
             <button type="button" id="nextButton" class="nextButton" onclick="go()"></button>
-    
+
             <span id="msg"></span>
             <span id="go"></span>
-    
+
             <script>
                 var checked, pressed;
                 function check() {
@@ -62,14 +62,14 @@
                     }
                     document.getElementById("msg").innerHTML = msg;
                 }
-        
+
                 function go(){
                     if(checked == true) {
                         $(document).ready(function () {
                         createCookie("Score", window.localStorage.getItem('score'), "10");
                         createCookie("GM", "Identify", "10");
                       });
-                  
+
                     function createCookie(name, value, days) {
                         var expires;
                         if (days) {
@@ -81,12 +81,12 @@
                         }
                     document.cookie = escape(name) + "=" + escape(value) + expires + "; path=/";
                     }
-                      window.location.href="../DataBase/running_total_test.php";
+                      window.location.href="../DataBase/add_score_identify.php";
                     }                
                 }
             </script>
-            
+
         </div>
 </body>
-       
+
 </html>
